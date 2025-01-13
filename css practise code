@@ -1,19 +1,46 @@
-Border image 
-#borderimg1 {
-  border: 10px solid transparent;
-  padding: 15px;
-  border-image: url(border.png) 50 round;
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#rcorners1 {
+  border-radius: 50px / 15px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
 }
 
-#borderimg2 {
-  border: 10px solid transparent;
-  padding: 15px;
-  border-image: url(border.png) 20% round;
+#rcorners2 {
+  border-radius: 15px / 50px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
 }
 
-#borderimg3 {
-  border: 10px solid transparent;
-  padding: 15px;
-  border-image: url(border.png) 30% round;
-}
+#rcorners3 {
+  border-radius: 50%;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;
+} 
+</style>
+</head>
+<body>
+
+<h1>The border-radius Property</h1>
+
+<p>Elliptical border - border-radius: 50px / 15px:</p>
+<p id="rcorners1"></p>
+
+<p>Elliptical border - border-radius: 15px / 50px:</p>
+<p id="rcorners2"></p>
+
+<p>Ellipse border - border-radius: 50%:</p>
+<p id="rcorners3"></p>
+
+</body>
+</html>
+
 
