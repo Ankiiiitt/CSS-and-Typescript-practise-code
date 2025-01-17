@@ -257,6 +257,324 @@ CSS Gradients
 </body>
 </html>
 
+radial gradients
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 150px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(red, yellow, green);
+}
+
+#grad2 {
+  height: 150px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(circle, red, yellow, green);
+}
+</style>
+</head>
+<body>
+
+<h1>Radial Gradient - Shapes</h1>
+
+<h2>Ellipse (this is default):</h2>
+<div id="grad1"></div>
+
+<h2><strong>Circle:</strong></h2>
+<div id="grad2"></div>
+
+</body>
+</html>
+
+
+conic gradients 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red, yellow, green, blue, black);
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<h1>Conic Gradient - Pie Chart</h1>
+
+<div id="grad1"></div>
+
+</body>
+</html>
+
+
+CSS Shadow effects 
+text shadow 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  text-shadow: 0 0 3px #FF0000;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow with red neon glow!</h1>
+
+</body>
+</html>
+
+
+Box shadow 
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: coral;
+  box-shadow: 10px 10px 5px lightblue inset;
+}
+</style>
+</head>
+<body>
+
+<h1>The box-shadow Property</h1>
+
+<div>A div element with a blurred, lightblue, inset box-shadow.</div>
+
+</body>
+</html>
+
+
+CSS text effects 
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+p.test1 {
+  writing-mode: horizontal-tb; 
+}
+
+span.test2 {
+  writing-mode: vertical-rl; 
+}
+
+p.test2 {
+  writing-mode: vertical-rl; 
+}
+</style>
+</head>
+<body>
+<h1>The writing-mode Property</h1>
+
+<p class="test1">Some text with default writing-mode.</p>
+
+<p>Some text with a span element with a <span class="test2">vertical-rl</span> writing-mode.</p>
+
+<p class="test2">Some text with writing-mode: vertical-rl.</p>
+
+</body>
+</html>
+
+
+CSS WEB FONTS 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+@font-face {
+   font-family: myFirstFont;
+   src: url(sansation_light.woff);
+}
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(sansation_bold.woff);
+   font-weight: bold;
+}
+
+* {
+   font-family: myFirstFont;
+}
+</style>
+</head>
+<body>
+
+<h1>The @font-face Rule</h1>
+
+<div>
+With CSS, websites can use <b>fonts other than the pre-selected "web-safe" fonts</b>.
+</div>
+
+</body>
+</html>
+
+
+css 2d transforms 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div#myDiv1 {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+div#myDiv2 {
+  transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+</style>
+</head>
+<body>
+
+<h1>The matrix() Method</h1>
+
+<p>The matrix() method combines all the 2D transform methods into one.</p>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv1">
+Using the matrix() method.
+</div>
+
+<div id="myDiv2">
+Another use of the matrix() method.
+</div>
+
+</body>
+</html>
+
+
+css 3d transformation 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+#myDiv {
+  transform: rotateZ(90deg);
+}
+</style>
+</head>
+<body>
+
+<h1>The rotateZ() Method</h1>
+
+<p>The rotateZ() method rotates an element around its Z-axis at a given degree.</p>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+This div element is rotated 90 degrees.
+</div>
+
+</body>
+</html>
+
+
+css transitions 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 3s;
+  transition-delay: 1s;
+}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition-delay Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div></div>
+
+<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+
+</body>
+</html>
+
+
+CSS ANIMATIONS 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+</html>
+
+
+
+
 
 
 
